@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import firstname from './index.js';
+import firstName from './index.js';
 
-expectType<string>(firstname());
+expectType<string>(firstName());
