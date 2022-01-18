@@ -25,7 +25,7 @@ firstName({locale: 'en_US', gender: 'female'});
 //=> Liana
 
 // Allowed gender: male, female
-// Allowed locale: en_US, ru_RU, pl_PL, uk_UA
+// Allowed locale: en_US, ru_RU, pl_PL, uk_UA, it_IT, de_DE, fr_FR
 ```
 
 ## Tests
