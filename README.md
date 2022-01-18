@@ -16,13 +16,16 @@ $ npm install --save @fakerjs/firstname
 ## Usage
 
 ```js
-import firstname from '@fakerjs/firstname';
+import firstName from '@fakerjs/firstname';
 
-firstname();
+firstName();
 //=> Lia
 
+firstName({locale: 'en_US', gender: 'female'});
+//=> Liana
+
 // Allowed gender: male, female
-// Allowed locale: en_US, ru_RU
+// Allowed locale: en_US, ru_RU, pl_PL, uk_UA
 ```
 
 ## Tests
