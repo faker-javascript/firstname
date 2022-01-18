@@ -1,6 +1,6 @@
 {
   "name": "@fakerjs/firstname",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Firstname package provides functionality to generate a fake first name value.",
   "license": "MIT",
   "repository": "faker-javascript/firstname",
