@@ -35,6 +35,6 @@
     "faker",
     "fake",
     "random",
-    "gender"
+    "firstname"
   ]
 }
