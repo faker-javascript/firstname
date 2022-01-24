@@ -1,18 +1,11 @@
 import path from 'node:path';
+import fs from 'node:fs';
 import {loadJsonFileSync} from 'load-json-file';
 
 export default function firstName(options) {
     options = options || {};
-    const gender = options.gender === undefined ? 'female' : options.gender;
-    const locale = options.locale === undefined ? 'en_US' : options.locale;
-    const filePath = `./locales/${locale}/${gender}.json`;
+    const filePath = `./locales/${options.locale || 'en_US'}/firstnames.json`;
     let firstnames = [];
-
-    try {
-        firstnames = loadJsonFileSync(filePath);
-    } catch {
-        firstnames = loadJsonFileSync(path.resolve('node_modules/@fakerjs/firstname/', filePath));
-    }
-
+    firstnames = fs.existsSync(path.resolve(filePath)) ? loadJsonFileSync(filePath) : loadJsonFileSync(path.resolve('node_modules/@fakerjs/firstname/', filePath));
     return firstnames[Math.floor(Math.random() * firstnames.length)];
 }
