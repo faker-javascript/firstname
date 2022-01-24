@@ -9,8 +9,14 @@ Firstname package provides functionality to generate a fake first name value.
 
 ## Install
 
+npm
 ```
-$ npm install --save @fakerjs/firstname
+npm install @fakerjs/firstname --save-dev
+```
+
+yarn
+```
+yarn add @fakerjs/firstname -D
 ```
 
 ## Usage
